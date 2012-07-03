@@ -18,6 +18,8 @@ ALL_LINGUAS="zh_CN zh_TW ko ja de fr it nl"
 AM_GNU_GETTEXT([external])
 AM_GNU_GETTEXT_VERSION(0.14)
 
+# Check intltool
+IT_PROG_INTLTOOL([0.33], [no-xml])
 
 # Init libtool
 AC_LIBTOOL_WIN32_DLL
