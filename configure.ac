@@ -1,6 +1,7 @@
 # Process this file with autoconf to produce a configure script.
 AC_INIT(scim-pinyin, 0.5.92, suzhe@tsinghua.org.cn) #do not forget to edit skim/configure.in.in to change the version
 AC_CONFIG_SRCDIR([src/scim_pinyin_imengine.h])
+AC_CONFIG_MACRO_DIR([m4])
 
 SCIM_VERSION=1.2.0
 AC_SUBST(SCIM_VERSION)
@@ -19,7 +20,7 @@ AM_GNU_GETTEXT([external])
 AM_GNU_GETTEXT_VERSION(0.14.1)
 
 # Check intltool
-IT_PROG_INTLTOOL([0.34.0])
+# IT_PROG_INTLTOOL([0.34.0])
 
 # Init libtool
 AC_LIBTOOL_DLOPEN
