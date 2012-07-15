@@ -16,16 +16,14 @@ AM_CONFIG_HEADER([config.h])
 # Init gettext
 ALL_LINGUAS="zh_CN zh_TW ko ja de fr it nl"
 AM_GNU_GETTEXT([external])
-AM_GNU_GETTEXT_VERSION(0.14)
+AM_GNU_GETTEXT_VERSION(0.14.1)
 
 # Check intltool
-IT_PROG_INTLTOOL([0.33], [no-xml])
+IT_PROG_INTLTOOL([0.34.0])
 
 # Init libtool
-AC_LIBTOOL_WIN32_DLL
 AC_LIBTOOL_DLOPEN
 AC_PROG_LIBTOOL
-AC_LIB_LTDL
 AC_SUBST(LIBTOOL_DEPS)
 
 # Checks for programs.
