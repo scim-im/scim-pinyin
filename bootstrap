@@ -20,16 +20,14 @@
 #! /bin/sh
 
 set -x
-libtoolize -c --automake
-intltoolize -c --automake
-aclocal
-autoheader
-automake --add-missing --copy --include-deps
-autoconf
+#libtoolize -c --automake
+#intltoolize -c --automake
+#aclocal
+#autoheader
+#automake --add-missing --copy --include-deps
+#autoconf
 
-#autoreconf --force --install
-#intltoolize --force
-#autoreconf
+autoreconf --force --install
 
 #cd skim
 #./bootstrap
